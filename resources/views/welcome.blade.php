@@ -27,6 +27,16 @@
         text-align: center;
         padding: 10px 0;
       }
+
+      @media (max-width:995px){
+        .image{
+          display: none;
+        }
+        .get-started{
+          justify-content: center;
+        }
+      }
+
     </style>
   </head>
   <body>
@@ -48,7 +58,7 @@
       <div class="container mt-5">
         <div class="row">
           <!-- Image -->
-          <div class="col-lg-4">
+          <div class="col-lg-4 image">
             <img
               src="{{ asset('image/notes.png') }}"
               alt="Notes Online"
@@ -57,8 +67,8 @@
           </div>
           <!-- Text -->
           <div class="col-lg-8">
-            <h2 style="font-size:80px">Take Your Notes And Write Something</h2>
-            <div style="display:flex; justify-content: left">
+            <h2 class="main-text" style="font-size:80px">Take Your Notes And Write Something</h2>
+            <div class="get-started" style="display:flex; justify-content: left">
               <a href="" class="btn btn-primary">Get Started</a>
             </div>
           </div>
